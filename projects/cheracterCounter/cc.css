@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(168, 255, 255);
+}
+#box{
+    border: 1px solid black;
+    width: 350px;
+    margin: auto;
+    text-align: center;
+    margin-top: 20vh;
+    background-color: rgb(216, 241, 118);
+    border-radius: 10px;
+}
+#text{
+    width: 80%;
+    height: 200px;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(247, 66, 66);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+
+
+}
+.score{
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+}
+

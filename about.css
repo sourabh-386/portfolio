@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,700;0,800;1,500&display=swap');
+
+.about_me {
+    padding-top: 20vh;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    padding-top: 8vh;
+    display: grid;
+    grid-template-columns: 300px 55%;
+    grid-auto-rows: 50% 50%;
+    row-gap: 40px;
+    font-size: 1.2rem;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    padding-bottom: 10vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#about_img {
+    width: 300px;
+    height: 300px;
+    border: 4px solid #0002A1;
+    border-radius: 10px;
+
+}
+
+#about_img img {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: -15px;
+    left: -15px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    transition: all 0.4s;
+
+
+}
+
+#about_img img:hover {
+    transition: all 0.4s;
+
+    top: -30px;
+    left: -30px;
+
+
+
+}
+
+
+#about_details {
+    /* padding: 10px; */
+    border: 1px solid black;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.about_btn {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    height: 40px;
+    align-items: center;
+}
+
+.about_education_btn,
+.about_personal_btn {
+    background-color: #0002A1;
+    color: white;
+    height: 100%;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.3rem;
+    transition: all 0.4s;
+    font-family: 'Merriweather Sans', sans-serif;
+    cursor: pointer;
+
+
+}
+
+.about_personal_btn {
+    border-right: 1px solid black;
+    transition: all 0.4s;
+
+}
+
+#about_slide {
+    display: flex;
+    transition: all 0.4s;
+}
+
+#about_education,
+#about_personal {
+    min-width: 90%;
+    /* border: 1px solid red; */
+    margin: 5%;
+}
+
+#about_education,
+#about_personal:hover {
+    cursor: pointer;
+}
+
+.about_active {
+    background-color: white;
+    color: black;
+    transition: all 0.4s;
+
+}
+
+#about_education {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    align-content: center;
+
+}
+
+#about_education center {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#cvv{
+    text-decoration: none;
+    color: black;
+}
+
+.cv {
+
+    width: 150px;
+    height: 40px;
+    margin: 10px;
+    margin-top: 20px;
+    background-color: rgb(255, 197, 5);
+
+    /* margin-left: 30px; */
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#about_personal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#about_personal p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+
+}
+
+.personalp8 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* background-color: aquamarine; */
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width : 650px) {
+
+    #about_personal,
+    #about_education {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+    }
+
+    #about_personal{
+        align-items: start;
+
+    }
+}
+
+
+
+
+/* abouy skills  */
+
+#about_skills {
+    font-family: 'Merriweather Sans', sans-serif;
+
+    width: 95%;
+    background-color: #FFEBAD;
+    grid-auto-rows: auto;
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    row-gap: 25px;
+    align-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all .4s ease;
+    overflow: hidden;
+
+
+}
+
+#skill {
+    border: 1px solid black;
+    width: 90%;
+    height: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+    transition: all .4s ease;
+
+
+}
+
+#skill:hover {
+    transform: translate3D(0, -1px, 0) scale(1.1);
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+#skill1_color {
+    width: 95%;
+    height: 10px;
+    background-color: blue;
+}
+
+#skill2_color {
+    width: 90%;
+    height: 10px;
+    background-color: blue;
+}
+
+#skill3_color {
+    width: 80%;
+    height: 10px;
+    background-color: blue;
+}
+
+#skill4_color {
+    width: 70%;
+    height: 10px;
+    background-color: blue;
+}
+
+#skill5_color {
+    width: 80%;
+    height: 10px;
+    background-color: blue;
+}
+
+#skill6_color {
+    width: 90%;
+    height: 10px;
+    background-color: blue;
+}
+
+@media only screen and (max-width : 950px) {
+    .about_me {
+        display: flex;
+        flex-direction: column;
+        /* background-color: blue; */
+    }
+}

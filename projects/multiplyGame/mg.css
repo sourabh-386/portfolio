@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(173, 112, 238);
+
+}
+
+
+#input::-webkit-inner-spin-button,#input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 300px;
+    border: 2px solid black;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+
+    border-radius: 10px;
+    background-color: rgb(166, 247, 247);
+
+    
+
+}
+#score{
+    border: 2px solid black;
+    padding: 3px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color: rgb(1, 13, 255);
+    color: rgb(255, 255, 255);
+
+
+}
+#sum{
+    font-size: 2rem;
+    margin-top: 15px;
+}
+
+#input{
+    width: 80%;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 10px;text-align: center;
+    font-size: 1.2rem;
+
+}
+
+#btn{
+    font-size: 1.4rem;
+    width: 30%;
+    margin: 25px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+}

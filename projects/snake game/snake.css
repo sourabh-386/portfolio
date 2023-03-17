@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+body{
+    /* background-color: aquamarine */
+    background-image: url(snakebg4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.snake_game{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+    background-image: url(snakebg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top:50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+
+}
+.snake{
+    background-color: rgb(0, 200, 255);
+}
+.food{
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+   
+}
+.food_light{
+    background-color: rgb(251, 255, 0);
+
+}
+.head{
+
+    background-image: url('my\ image.png');
+    background-size: cover;
+    
+    /* background-color: rgb(0, 17, 255); */
+
+}
+.user{
+    position: absolute;
+    font-family: 'Merriweather', serif;
+    top: 20%;
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    left: 60%;
+    /* text-align: center; */
+}
+

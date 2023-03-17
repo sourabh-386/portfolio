@@ -1,0 +1,156 @@
+.contact_page {
+    z-index: ;
+    position: fixed;
+    color: white;
+    width: 690px;
+    height: 400px;
+    background-color: #0002A1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    justify-content: space-around;
+    padding: 20px;
+    column-gap: 10px;
+    padding-top: 10vh;
+    overflow: hidden;
+    border-radius: 10px;
+    opacity: 1;
+    transition: all 0.5s;
+}
+.contact_active.contact_page{
+    visibility: hidden;
+    transition: all 0.5s;
+
+    opacity: 0;
+    top: 10%;
+}
+#contact_close {
+    position: absolute;
+}
+
+.contact_part1,
+.contact_part2 {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    margin: 10px;
+    /* align-items: center; */
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.links a {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    color: white;
+
+}
+
+.contact_part1 h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.contact_part1 button,
+#contact_submit {
+    width: 150px;
+    height: 40px;
+    margin: 10px;
+    margin-top: 20px;
+    background-color: rgb(255, 197, 5);
+
+    margin-left: 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+
+.contact_part2 input,
+textarea {
+    height: 40px;
+    width: 90%;
+    text-align: center;
+    margin: 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+
+
+
+}
+
+.contact_part2 textarea {
+    height: 100px;
+}
+
+#contact_close {
+    right: 20px;
+    top: 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    background-color: rgb(255, 197, 5);
+
+
+}
+
+
+@media only screen and (max-width:755px) {
+    .contact_page {
+        width: 350px;
+        column-gap: 5px;
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+        align-items: center;
+        justify-content: center;
+        /* align-items: center; */
+        margin: 0px;
+        padding: 0px;
+
+
+    }
+
+    .links,
+    #textarea {
+        visibility: hidden;
+        position: absolute;
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+    .contact_part1 h1 {
+        /* margin-bottom: -60px; */
+        padding: 0px;
+        margin-bottom: 40px;
+    }
+
+    .contact_part1 button,
+    #contact_submit {
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+    }
+    .contact_part1 button{
+bottom: 10px;
+transform: translateX(35%);
+    }
+    #contact_submit{
+        transform: translateX(65%);
+
+    }
+    
+    .contact_part2 {
+        display: block;
+        flex-direction: column;
+        margin: 0px;
+    }
+}
